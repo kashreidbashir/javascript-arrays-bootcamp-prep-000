@@ -11,7 +11,14 @@ function addElementToBeginningOfArray(chocolateBars, candyString){
   return [candyString, ...chocolateBars];
 }
 // Note the ... adds an element to the array
+function addElementToEndOfArray(chocolateBars, candyString){
+  return [...chocolateBars, candyString];
+}
 
+function destructivelyAddElementToEndOfArray(chocolateBars, candyString){
+  chocolateBars.push(candyString);
+  return chocolateBars;
+}
 function destructivelyAddElementToBeginningOfArray(chocolateBars, candyString){
  chocolateBars.unshift(candyString);
  return chocolateBars;
